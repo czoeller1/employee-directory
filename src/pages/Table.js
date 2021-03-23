@@ -45,57 +45,6 @@ function Table() {
         clearFilter={clearFilter}
         sortDisplay={sortDisplay}
       ></Filter>
-      {/* <div className=" d-flex justify-content-between">
-        <div className="dropdown">
-          <button
-            className="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="filter"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Filter by Gender
-          </button>
-          <div className="dropdown-menu" aria-labelledby="filter">
-            <button className="dropdown-item" id="male" onClick={filterDisplay}>
-              Male
-            </button>
-            <hr></hr>
-            <button
-              className="dropdown-item"
-              id="female"
-              onClick={filterDisplay}
-            >
-              Female
-            </button>
-          </div>
-        </div>
-        <button className="btn btn-secondary" onClick={clearFilter}>
-          Reset
-        </button>
-        <div className="dropdown">
-          <button
-            className="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="sort"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Sort by Age
-          </button>
-          <div className="dropdown-menu" aria-labelledby="sort">
-            <button className="dropdown-item" id="<" onClick={sortDisplay}>
-              Ascending
-            </button>
-            <hr></hr>
-            <button className="dropdown-item" id=">" onClick={sortDisplay}>
-              Descending
-            </button>
-          </div>
-        </div>
-      </div> */}
 
       <table className="table mt-5">
         <thead>
