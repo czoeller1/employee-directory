@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import API from "../util/API";
 import Row from "../components/Row";
+import Filter from "../components/Filter";
 
 function Table() {
   const [employees, setEmployees] = useState();
@@ -39,7 +40,12 @@ function Table() {
   //console.log(employees);
   return (
     <div className="w-50 mx-auto">
-      <div className=" d-flex justify-content-between">
+      <Filter
+        filterDisplay={filterDisplay}
+        clearFilter={clearFilter}
+        sortDisplay={sortDisplay}
+      ></Filter>
+      {/* <div className=" d-flex justify-content-between">
         <div className="dropdown">
           <button
             className="btn btn-secondary dropdown-toggle"
@@ -89,7 +95,7 @@ function Table() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <table className="table mt-5">
         <thead>
